@@ -11,7 +11,7 @@ function App() {
   const [users, getAllUsers, createNewUser, deleteUserById, updateUserById] =
     useFetch(baseUrl, setCloseForm);
   useEffect(() => {
-    getAllUsers("/users");
+    getAllUsers("/users/");
   }, []);
   console.log(users);
   const handleOpenForm = () => {
